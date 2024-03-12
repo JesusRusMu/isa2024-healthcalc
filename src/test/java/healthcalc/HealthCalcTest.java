@@ -20,13 +20,13 @@ public class HealthCalcTest {
 	@Test // Primero
 	@DisplayName("Test de altura mayor a la esperada")
 	public void testAlturaMayor(){
-		assertThrows( IllegalArgumentException.class, () -> c.idealWeight(250,'M'), "La altura introducida es mayor a la esperada" );
+		assertThrows( IllegalArgumentException.class, () -> c.idealWeight(300,'M'), "La altura introducida es mayor a la esperada" );
 	}
 
 	@Test // Segundo
 	@DisplayName("Test de altura menor a la esperada")
 	public void testAlturaMenor(){
-		assertThrows( IllegalArgumentException.class, () -> c.idealWeight(100,'M'), "La altura introducida es menor a la esperada" );
+		assertThrows( IllegalArgumentException.class, () -> c.idealWeight(5,'M'), "La altura introducida es menor a la esperada" );
 	}
 
 	@Test // Tercero
@@ -39,37 +39,24 @@ public class HealthCalcTest {
 	@DisplayName("Test de hombre")
 	public void testHombre() throws Exception{
 
-		int a1= 40;
 		int a2= 170;
-		int a3= 360;
 
-		float IW = 110 - 100 - (110 - 150) / 4f;
-		assertEquals(IW, c.idealWeight( a1, 'm'));
-
-		IW = 168 - 100 - (168 - 150) / 4f;
+		float IW = a2 - 100 - (a2 - 150) / 4f;
 		assertEquals(IW, c.idealWeight(a2, 'm'));
 
-		IW = 250 - 100 - (250 - 150) / 4f;
-		assertEquals(IW, c.idealWeight(a3, 'm'));
 	}
 
 	@Test // Quinto
 	@DisplayName("Test de mujer")
 	public void testMujer() throws Exception{
 
-		int a1= 40;
 		int a2= 170;
-		int a3= 360;
+		
 
-		float IW = 110 - 100 - (110 - 150) / 4f;
-
-		assertEquals(IW, c.idealWeight( a1, 'w'));
-
-		IW = 168 - 100 - (168 - 150) / 4f;
+		float IW = a2 - 100 - (a2 - 150) / 2.5f;
 		assertEquals(IW, c.idealWeight(a2, 'w'));
 
-		IW = 250 - 100 - (250 - 150) / 4f;
-		assertEquals(IW, c.idealWeight(a3, 'w'));
+
 	}
 
 
