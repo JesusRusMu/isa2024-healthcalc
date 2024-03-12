@@ -48,7 +48,8 @@ Tras realizar los tests y corregir algunos errores, proceso a importar una captu
 
 
 
+Ahora para acabar procedo a subir el desarrollo del repositorio mediante el comando gitk:
 
-
+![IMAGEN DEL RESUMEN DEL REPOSITORIO] (https://raw.githubusercontent.com/JesusRusMu/isa2024-healthcalc/3b550903b14ee0760df34825d9be754a42a54020/CapturaRepositorio.png)
 
 
