@@ -42,5 +42,13 @@ Prueba el cálculo del metabolismo basal para hombres promedio y verifica si el 
 Similar al anterior, pero para mujeres promedio.
 
 
+Tras realizar los tests y corregir algunos errores, proceso a importar una captura sobre los test realizados:
+
+![IMAGEN DE TODOS LOS TESTS CORREGIDOS] (https://github.com/JesusRusMu/isa2024-healthcalc/blob/main/TestSoftware.png?raw=true)
+
+
+
+
+
 
 
