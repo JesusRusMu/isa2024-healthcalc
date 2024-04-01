@@ -1,0 +1,53 @@
+Historia de Usuario 1: Cálculo del peso ideal de una persona
+
+Como usuario,
+Quiero poder calcular el peso ideal de una persona,
+Para determinar si su peso actual está dentro de un rango saludable.
+
+Criterios de Aceptación:
+- El usuario puede ingresar la altura y el género de la persona.
+- El sistema calcula el peso ideal de acuerdo con la fórmula específica para hombres o mujeres.
+- El sistema muestra el peso ideal calculado al usuario.
+
+Escenarios:
+1. Calcular el peso ideal para un hombre:
+   - Dado que el usuario ha ingresado una altura de 180 cm y ha seleccionado el género masculino.
+   - Cuando el usuario solicita calcular el peso ideal.
+   - Entonces el sistema muestra el peso ideal calculado como 72 kg.
+
+2. Calcular el peso ideal para una mujer:
+   - Dado que el usuario ha ingresado una altura de 160 cm y ha seleccionado el género femenino.
+   - Cuando el usuario solicita calcular el peso ideal.
+   - Entonces el sistema muestra el peso ideal calculado como 58 kg.
+
+3. Error de entrada inválida de altura:
+   - Dado que el usuario ha ingresado una altura negativa de -160 cm y ha seleccionado el género masculino.
+   - Cuando el usuario solicita calcular el peso ideal.
+   - Entonces el sistema muestra un mensaje de error indicando que la altura ingresada no es válida y solicita al usuario que ingrese una altura válida.
+
+Historia de Usuario 2: Cálculo de la tasa metabólica basal de una persona
+
+Como usuario,
+Quiero poder calcular la tasa metabólica basal (TMB) de una persona,
+Para determinar su requerimiento calórico diario básico.
+
+Criterios de Aceptación:
+- El usuario puede ingresar el peso, la altura, la edad y el nivel de actividad física de la persona.
+- El sistema calcula la TMB de acuerdo con la fórmula específica.
+- El sistema muestra la TMB calculada al usuario.
+
+Escenarios:
+1. Calcular la TMB para una persona con actividad física baja:
+   - Dado que el usuario ha ingresado un peso de 70 kg, una altura de 170 cm, una edad de 30 años y ha seleccionado un nivel de actividad física bajo.
+   - Cuando el usuario solicita calcular la TMB.
+   - Entonces el sistema muestra la TMB calculada como 1500 kcal/día.
+
+2. Calcular la TMB para una persona con actividad física moderada:
+   - Dado que el usuario ha ingresado un peso de 80 kg, una altura de 180 cm, una edad de 35 años y ha seleccionado un nivel de actividad física moderado.
+   - Cuando el usuario solicita calcular la TMB.
+   - Entonces el sistema muestra la TMB calculada como 1800 kcal/día.
+
+3. Error de entrada inválida de edad:
+   - Dado que el usuario ha ingresado una edad negativa de -30 años, un peso de 70 kg, una altura de 170 cm y ha seleccionado un nivel de actividad física bajo.
+   - Cuando el usuario solicita calcular la TMB.
+   - Entonces el sistema muestra un mensaje de error indicando que la edad ingresada no es válida y solicita al usuario que ingrese una edad válida.
