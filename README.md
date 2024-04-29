@@ -117,3 +117,12 @@ Escenarios:
    - Entonces el sistema muestra un mensaje de error indicando que la edad ingresada no es válida y solicita al usuario que ingrese una edad válida.
 
 
+
+
+Práctica 4: Interfaz gráfica de usuario
+
+
+![Captura de pantalla de la interfaz] (https://github.com/JesusRusMu/isa2024-healthcalc/blob/practica4/doc/Calculadora_Salud.png)
+
+
+
